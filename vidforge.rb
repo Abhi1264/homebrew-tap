@@ -5,21 +5,21 @@
 class Vidforge < Formula
   desc "Terminal-based universal video downloader"
   homepage "https://github.com/Abhi1264/vidforge"
-  version "1.1.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Abhi1264/vidforge/releases/download/v1.1.0/vidforge_1.1.0_darwin_amd64.tar.gz"
-      sha256 "6655a582320829994c71bc11402f5a2b1400751fbfd482d589a9ac40f2ace351"
+      url "https://github.com/Abhi1264/vidforge/releases/download/v1.2.1/vidforge_1.2.1_darwin_amd64.tar.gz"
+      sha256 "9bd76f7fd8825c3580f0b40984de76100a1dc6082181f5611174d53a492f5728"
 
       def install
         bin.install "vidforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Abhi1264/vidforge/releases/download/v1.1.0/vidforge_1.1.0_darwin_arm64.tar.gz"
-      sha256 "2ebfbfbb4133e1ccc36e7f11b1cbb09a0c872fdd38a1ec95ad7116b1390bcd92"
+      url "https://github.com/Abhi1264/vidforge/releases/download/v1.2.1/vidforge_1.2.1_darwin_arm64.tar.gz"
+      sha256 "5589e0379385d8d07adc72565e03ef01718ae02fe4e903c8a7b0cf49f4522562"
 
       def install
         bin.install "vidforge"
@@ -29,15 +29,15 @@ class Vidforge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Abhi1264/vidforge/releases/download/v1.1.0/vidforge_1.1.0_linux_amd64.tar.gz"
-      sha256 "036d16d861e16ffb0347565e9b6c4946d63c43ae17a6e45a35826bee5429966a"
+      url "https://github.com/Abhi1264/vidforge/releases/download/v1.2.1/vidforge_1.2.1_linux_amd64.tar.gz"
+      sha256 "aa93962fa7acc2ffb1667d668ad71bd85d4c9a6f273b990bbae19e8a633e4594"
       def install
         bin.install "vidforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Abhi1264/vidforge/releases/download/v1.1.0/vidforge_1.1.0_linux_arm64.tar.gz"
-      sha256 "482c64e3a488ad57d624c5bdabc151ef6071778a6877c0da8aed578350e7c4d7"
+      url "https://github.com/Abhi1264/vidforge/releases/download/v1.2.1/vidforge_1.2.1_linux_arm64.tar.gz"
+      sha256 "0ebfcf0ea29a86184ea46789b9aa0ac88a5bb81ebd188ee2f9d4b1d0fe13f3e6"
       def install
         bin.install "vidforge"
       end
